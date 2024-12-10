@@ -1,0 +1,128 @@
+/* 日付と時計のスタイル */
+.datetime {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#dateDisplay {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+#timeDisplay {
+    font-size: 48px;
+    color: #333;
+}
+
+/* リセットスタイル */
+body, h1, p, ul, li, button, input {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background: #ffffff;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 450px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 24px;
+    color: #333333;
+}
+
+.description {
+    font-size: 14px;
+    color: #666;
+    margin-top: 10px;
+}
+
+.input-group {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+#taskInput, #taskTime {
+    padding: 10px;
+    border: 1px solid #ddd;
+    font-size: 16px;
+}
+
+#taskInput {
+    flex: 2;
+    border-radius: 4px 0 0 4px;
+    margin-right: 5px; /* マージンを追加 */
+}
+
+#taskTime {
+    flex: 1;
+    border-radius: 4px;
+}
+
+#addTaskButton {
+    padding: 10px 20px;
+    border: none;
+    background-color: #5cb85c;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-left: 5px; /* マージンを追加 */
+}
+
+#addTaskButton:hover {
+    background-color: #4cae4c;
+}
+
+#taskList {
+    list-style-type: none;
+}
+
+#taskList li {
+    background-color: #f8f8f8;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#taskList li .task-time {
+    margin-right: 20px;
+    color: #555;
+}
+
+#taskList li button {
+    background-color: #d9534f;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+#taskList li button:hover {
+    background-color: #c9302c;
+}
